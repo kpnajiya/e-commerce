@@ -1,0 +1,18 @@
+.head3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 30px;
+}
+/* .card-group{
+  height:400px;
+  width:500px */
+
+.card{
+    padding-top: 50px;
+    border: none;
+   
+}
+.card-title{
+    text-align: center;
+}
+

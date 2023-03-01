@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<body class="">
+  <div class="form-div pb-1">
+    <h3 class="head">-customer Login-</h3>
+    <form class="form-group p-3" (ngSubmit)="submit(form.value)" #form="ngForm">
+      <div class="mb-3">
+        <label for="customerlogin" class="form-label"></label>
+        <input type="email" class="form-control" placeholder="Email"name="email"id="" ngModel
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label"></label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Password"
+          name="password"
+          id=""
+          ngModel
+        />
+      </div>
+      <div >
+      <button type="submit" class="btn btn-primary">Submit</button><br/><br />
+      <!-- <a href="">Forgot password</a> -->
+      <p>Don't havean acccount? Register Here!</p>
+      <button class="btn btn-success">
+        <a class="reg" [routerLink]="'/customer-reg'">Register here!</a>
+      </button>
+      <a class="customer">Forgot password?</a>
+      </div>
+    </form>
+    {{ message }}
+  </div>
+</body>
+<app-footer></app-footer>

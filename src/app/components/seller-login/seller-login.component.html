@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<body  class="container-fluid ">
+  <div class="form-div">
+<h3 class="head ">-Seller Login-</h3>
+<form  class="form-group" #form="ngForm" (ngSubmit)="submit(form.value)" >
+    <div class="mb-3" >
+      <label for="sellerid" class="form-label"> </label>
+      <input type="text" class="form-control" id="" name="user_name" placeholder="Seller id" ngModel>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label"></label>
+      <input type="password" class="form-control" id="" placeholder="Password" name="password" ngModel>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button><br>
+    <p>Don't Have an account? Register Here!</p>
+    <button class="btn btn-success"><a class="sell" [routerLink]="'/seller-reg'">Register here!</a></button>
+    <a class="seller">Forgot password?</a>
+  </form>
+  </div> 
+</body>
+  <app-footer></app-footer>

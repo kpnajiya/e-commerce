@@ -1,0 +1,7 @@
+<form [formGroup]="myform">
+    <div class="mb-3">
+      <label for="pincode" class="form-label">zipcode</label>
+      <input type="number" formControlName="zipcode" class="form-control" id="pincode" aria-describedby="">
+      <span *ngIf="myform.get('zipcode')?.hasError('invalidAsync')">invalid zipcode</span>
+    </div>
+  </form>

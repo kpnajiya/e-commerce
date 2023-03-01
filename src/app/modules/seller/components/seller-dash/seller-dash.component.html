@@ -1,0 +1,94 @@
+<header>
+  <!-- <nav
+    id="sidebarMenu"
+    class="collapse d-lg-block sidebar collapse bg-white width-300px"
+  >
+    <div class="position-sticky">
+      <div class="list-group list-group-flush mx-3 mt-4">
+        <a
+          class="list-group-item list-group-item-action ripple"
+          aria-current="true"
+        >
+          <i class="fas fa-tachometer-alt fa-fw me-3 active"></i
+          ><span>HOME</span>
+        </a>
+        <a
+          [routerLink]="'/seller/add-products'"
+          class="list-group-item list-group-item-action py-2"
+        >
+          <i class="fas fa-chart-area fa-fw me-3"></i><span>Add catogery</span>
+        </a>
+        <a class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-lock fa-fw me-3"></i><span>View category</span></a
+        >
+        <a class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-chart-line fa-fw me-3"></i
+          ><span>View seller</span></a
+        >
+        <a class="list-group-item list-group-item-action py-2 ripple">
+          <i class="fas fa-chart-pie fa-fw me-3"></i><span>Approve seller</span>
+        </a>
+        <a class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-chart-bar fa-fw me-3"></i
+          ><span>View customer</span></a
+        >
+        <a class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-globe fa-fw me-3"></i
+          ><span>Change password</span></a
+        >
+      </div>
+    </div>
+  </nav> -->
+  <!-- Sidebar -->
+
+  <!--Main layout-->
+  <div class="dash">
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+        <div
+          class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+          >
+            <span class="fs-5 d-none d-sm-inline">DShandbags</span>
+          </a>
+          <ul
+            class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+            id="menu"
+          >
+            <li class="nav-item">
+              <a [routerLink]="'/seller'" class="nav-link align-middle px-0">
+                <i class="fs-4 bi-house text-white"></i>
+                <span class="ms-1 d-none d-sm-inline text-white">Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a [routerLink]="'/seller/add-products'" class="nav-link px-0 align-middle">
+                <span class="ms-1 d-none d-sm-inline text-white">Add category</span></a>
+            </li>
+            <li>
+              <a class="nav-link px-0 align-middle">
+                <span class="ms-1 d-none d-sm-inline text-white">view category</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link px-0 align-middle">
+                <span class="ms-1 d-none d-sm-inline text-white">View Customer</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link px-0 align-middle text-white">
+                <span class="ms-1 d-none d-sm-inline">Change password</span>
+              </a>
+            </li>
+          </ul>
+          <hr/>
+        </div>
+      </div>  
+        <div class="profile">
+         <app-profile></app-profile>
+        </div>

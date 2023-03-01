@@ -1,0 +1,46 @@
+body{
+    background-color: beige;
+}
+.head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 20px;
+}
+.img1{
+    padding-top: 20px;
+    width: 100%;
+    
+}
+.head1{
+    padding-top: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.img2{
+    padding-top: 30px;
+    height: 500px;
+    width: 600px;
+    float: right;
+    padding-bottom: 30px;
+}
+.text{
+    text-align: center;
+    padding-top: 50px;
+}
+.cat{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.card{
+    padding: 10px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    border: none;
+}
+.card-title{
+   
+    color: black;
+}
+.link{
+    text-decoration: none;
+}

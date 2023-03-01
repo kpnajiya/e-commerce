@@ -1,0 +1,74 @@
+<app-navbar></app-navbar>
+{{message}}
+<body class="">
+<div class="header">
+  <h2>-Seller Registration-</h2>
+<div class="container-fluid">
+<form #form="ngForm" (ngSubmit)="submit(form.value)" >
+    <div class="form-group">
+      <label for=""></label>
+      <input ngModel name="first_name"   type="text" class="form-control"  placeholder="First Name">
+      <!-- <div *ngIf="Pname.touched">
+        <span *ngIf="Pname.errors?.['required']">please enter the name</span>
+        <span *ngIf="Pname.errors?.['pattern']">invalid name</span>
+      </div> -->
+    </div><br>
+    <div class="form-group">
+      <label for=""></label>
+      <input ngModel name="last_name"  type="text" class="form-control"  placeholder="Last Name">
+   
+    
+    </div><br>
+    <div class="form-group">
+        <label></label>
+        <input ngModel name="email"    type="email" class="form-control"  placeholder="Email">
+      </div><br>
+
+    
+    <div class="form-group">
+      <label> </label>
+      <input ngModel name="phone" type="number" class="form-control"  placeholder="Phone Number">
+      
+    </div><br>
+
+    <div class="form-group">
+        <label></label>
+        <textarea ngModel name="address" class="form-control"  placeholder="Address"></textarea>
+    </div><br>
+
+      <div class="form-group">
+        <label ></label>
+        <input ngModel name="bank_name"  type="text" class="form-control"  placeholder="Bank Name">
+    
+      </div><br>
+      <div class="form-group">
+        <label ></label>
+        <input  ngModel name="branch" type="text" class="form-control"  placeholder="Bank Branch">
+    
+      </div><br>
+      <div class="form-group">
+        <label ></label>
+        <input ngModel name="ifsc" type="number" class="form-control"  placeholder="IFSC">
+      
+      </div><br>
+
+      <div class="form-group">
+        <label ></label>
+        <input ngModel name="account_no"  type="number" class="form-control"  placeholder="Account Number">
+      
+      </div><br>
+      <div class="form-group">
+        <label ></label>
+        <input (change)="onImageChanged($event)" ngModel name="seller_pic"  type="file" class="form-control"  placeholder="Seller Pic">
+      
+      </div><br>
+    
+    <button type="submit" class="btn btn-warning">Submit</button>
+    <br><br>
+    <a class="text-decoration-none"  [routerLink]="'/seller-login'">alredy have an account?</a>
+  </form>
+
+</div> 
+</div> 
+</body>
+  <app-footer></app-footer>
